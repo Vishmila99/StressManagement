@@ -18,6 +18,16 @@ return [
         'passwords' => 'users',
     ],
 
+    'doctor' => [
+        'driver' => 'eloquent',
+        'model' => App\Models\User::class,
+    ],
+
+    'admin' => [
+        'driver' => 'eloquent',
+        'model' => App\Models\User::class,
+    ],
+
     /*
     |--------------------------------------------------------------------------
     | Authentication Guards
@@ -37,6 +47,16 @@ return [
 
     'guards' => [
         'web' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+
+        'doctor' => [
+            'driver' => 'session',
+            'provider' => 'users',
+        ],
+
+        'admin' => [
             'driver' => 'session',
             'provider' => 'users',
         ],

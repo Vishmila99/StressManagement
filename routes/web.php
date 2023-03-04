@@ -1,6 +1,11 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\UserController;
+use App\Http\Controllers\DoctorController;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,11 +17,59 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/* General Routes */
 Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+
+/* User Routes */
+Route::prefix('user')->name('user.')->group(function () {
+
+    Route::middleware(['guest:web'])->group(function () {
+        Route::view('login','auth.loginuser')->name('login');
+        Route::post('login',[LoginController::class, 'login'])->name('login.check');
+
+    });
+
+    Route::middleware(['auth:web'])->group(function () {
+        Route::get('/dashboard',[UserController::class, 'index'])->name('dashboard');
+        Route::post('logout',[LoginController::class, 'logout'])->name('logout');
+
+    });
+});
+
+/* Doctor Routes */
+Route::prefix('doctor')->name('doctor.')->group(function () {
+
+    Route::middleware(['guest:doctor'])->group(function () {
+        Route::view('login','auth.logindoctor')->name('login');
+        Route::post('login',[LoginController::class, 'login'])->name('login.check');
+
+    });
+
+    Route::middleware(['auth:doctor'])->group(function () {
+        Route::get('/dashboard',[DoctorController::class, 'index'])->name('dashboard');
+        Route::post('logout',[LoginController::class, 'logout'])->name('logout');
+
+    });
+});
+
+/* Admin Routes */
+Route::prefix('admin')->name('admin.')->group(function () {
+
+    Route::middleware(['guest:admin'])->group(function () {
+        Route::view('login','auth.loginadmin')->name('login');
+        Route::post('login',[LoginController::class, 'login'])->name('login.check');
+
+    });
+
+    Route::middleware(['auth:admin'])->group(function () {
+        Route::get('/dashboard',[AdminController::class, 'index'])->name('dashboard');
+        Route::post('logout',[LoginController::class, 'logout'])->name('logout');
+
+    });
+});

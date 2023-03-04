@@ -23,7 +23,19 @@ class RedirectIfAuthenticated
 
         foreach ($guards as $guard) {
             if (Auth::guard($guard)->check()) {
-                return redirect(RouteServiceProvider::HOME);
+                // return redirect(RouteServiceProvider::HOME);
+                if($guard === 'web'){
+                    // return redirect()->route('user.dashboard');
+                    return redirect(RouteServiceProvider::USERHOME);
+                }
+                if($guard === 'doctor'){
+                    // return redirect()->route('doctor.dashboard');
+                    return redirect(RouteServiceProvider::DOCTORHOME);
+                }
+                if($guard === 'admin'){
+                    // return redirect()->route('admins.dashboard');
+                    return redirect(RouteServiceProvider::ADMINHOME);
+                }
             }
         }
 
