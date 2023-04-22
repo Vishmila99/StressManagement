@@ -18,9 +18,10 @@ use App\Http\Controllers\AdminController;
 |
 */
 /* General Routes */
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/','components.home')->name('index');
+Route::view('/about','components.about_us')->name('about');
+Route::view('/services','components.services')->name('services');
+Route::view('/contact','components.contact_us')->name('contact');
 
 Auth::routes(['register' => false]);
 
