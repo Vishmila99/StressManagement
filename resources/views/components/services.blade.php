@@ -1,65 +1,44 @@
 @extends('layouts.index')
-@section('title','abc')
+@section('title','PROJECT - Program')
 @section('content')
-     <!--  ************************* Page Title Starts Here ************************** -->
-               <div class="page-nav no-margin row">
-                   <div class="container">
-                       <div class="row">
-                           <h2>About Spinta Clinic</h2>
-                           <ul>
-                               <li> <a href="#"><i class="fas fa-home"></i> Home</a></li>
-                               <li><i class="fas fa-angle-double-right"></i> About Us</li>
-                           </ul>
-                       </div>
-                   </div>
-               </div>
 
-         <!-- ######## Page  Title End ####### -->
-
-        <!-- ################# Our Session Starts Here#######################--->
-
-  	<section class="sesion-type">
-  	    <div class="container">
-
-  	        <div class="row">
-  	            <div class="col-md-4 col-sm-6">
-  	                <div class="single-sess">
-  	                    <img src="assets/images/session/therapy-1.jpg" alt="">
-  	                    <p>Individual Therapy</p>
-  	                </div>
-  	            </div>
-  	            <div class="col-md-4 col-sm-6">
-  	                <div class="single-sess">
-  	                    <img src="assets/images/session/therapy-2.jpg" alt="">
-  	                    <p>Cuple Therapy</p>
-  	                </div>
-  	            </div>
-  	            <div class="col-md-4 col-sm-6">
-  	                <div class="single-sess">
-  	                    <img src="assets/images/session/therapy-3.jpg" alt="">
-  	                    <p>online Session</p>
-  	                </div>
-  	            </div>
-  	            <div class="col-md-4 col-sm-6">
-  	                <div class="single-sess">
-  	                    <img src="assets/images/session/therapy-4.jpg" alt="">
-  	                    <p>Group Therapy</p>
-  	                </div>
-  	            </div>
-  	            <div class="col-md-4 col-sm-6">
-  	                <div class="single-sess">
-  	                    <img src="assets/images/session/therapy-5.jpg" alt="">
-  	                    <p>All Age Group</p>
-  	                </div>
-  	            </div>
-  	            <div class="col-md-4 col-sm-6">
-  	                <div class="single-sess sess-ok">
-  	                   <h4>Start Your Session today</h4>
-  	                    <p>Take the first step on your journey to feeling better. </p>
-  	                    <button class="btn btn-success">Book an Appointment</button>
-  	                </div>
-  	            </div>
-  	        </div>
-  	    </div>
-  	</section>
+@section('footer')
+    @include('layouts.footer')
 @endsection
+
+<div class="slider">
+    <!-- Set up your HTML -->
+    {{-- <div class="owl-carousel "> --}}
+        <div class="slider-img">
+        <div class="item">
+                <div class="slider-img"> <img src="assets/images/slider/slider-3.jpg" alt=""></div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-12 col-xs-12">
+                            <div class="slider-captions">
+                                <h1 class="slider-title">Give your life gift of unconditional happiness.</h1>
+                                <h4 class="slider-text hidden-xs">What type of theraphy are loking for?? </h4>
+
+                                <div class="row">
+                                    <div class="col-md-6">
+                                <a href="{{route('individual')}}" class="btn btn-success btn-rounded"> Individual for myself</a>
+
+                                    </div>
+                                    <div class="col-md-6">
+                                <a href="#" class="btn btn-success btn-rounded">Couples for me and my partner</a>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{-- </div> --}}
+</div>
+
+
+@endsection
+

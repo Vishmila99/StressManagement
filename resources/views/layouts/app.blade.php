@@ -105,7 +105,7 @@
                                     @endif
                                 </div>
                             </li>
-                        @endguest
+                        @endguest       
                     </ul>
                 </div>
             </div>

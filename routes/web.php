@@ -20,10 +20,18 @@ use App\Http\Controllers\AdminController;
 /* General Routes */
 Route::view('/','components.home')->name('index');
 Route::view('/about','components.about_us')->name('about');
-Route::view('/services','components.services')->name('services');
+// Route::view('/services','components.services')->name('services');
 Route::view('/contact','components.contact_us')->name('contact');
+Route::view('/blog' ,'components.blog')->name('blog');
+Route::view('/services', 'components.services')->name('services');
+Route::view('/individual', 'components.individual')->name('individual');
+Route::view('/individual_form', 'components.individual_form')->name('individual_form');
 
-Auth::routes(['register' => false]);
+
+
+
+
+Auth::routes(['register' => true]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

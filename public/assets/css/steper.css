@@ -1,0 +1,114 @@
+:root {
+    --color-1: #6366f1;
+    --color-1-hover: #4338ca;
+    --color-2: #06b6d4;
+    --color-2-hover: #0891b2;
+    --text-color: #312e81;
+    --status-btn-bg: #f8fafc;
+    --status-btn-bg-hover: #f1f5f9;
+}
+
+.top {
+padding-top: 120px;
+}
+#containerForm {
+
+    margin-bottom: 90px;
+    background: white;
+}
+
+#stepForm .form-input {
+    width: 100%;
+    border: 1px solid #ddd;
+    border-radius: .5rem;
+    box-shadow: inset 0px 1px 2px rgba(0, 0, 0, .1);
+    padding: 1rem;
+    box-sizing: border-box;
+    color: var(--text-color);
+    transition: ease-in-out .3s all;
+}
+
+#stepForm .form-input::placeholder {
+    color: #cbd5e1;
+}
+
+#stepForm .form-input:focus {
+    outline: none;
+    border-color: var(--color-1);
+}
+
+#stepForm .btn:focus-within,
+#stepForm .form-input:focus-within {
+    box-shadow: #f8fafc 0px 0px 0px 2px, #c7d2fe 0px 0px 0px 6px, #0000 0px 1px 2px 0px;
+}
+
+#stepForm textarea.form-input {
+    min-height: 150px;
+}
+
+#stepForm .btn {
+    border: 0;
+    background: var(--color-1);
+    padding: 1rem;
+    border-radius: 25px;
+    color: white;
+    cursor: pointer;
+}
+
+#stepForm .btn[disabled] {
+    opacity: .5;
+    pointer-events: none;
+}
+
+#stepForm .btn:hover {
+    background: var(--color-1-hover);
+    transition: ease-in-out .3s all;
+}
+
+#stepForm .btn-submit {
+    background-color: var(--color-2);
+}
+
+#stepForm .btn-submit:hover {
+    background-color: var(--color-2-hover);
+}
+
+#containerForm .pagination {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#containerForm .pagination .btn {
+    width: 100%;
+    text-align: center;
+    margin: 0 6px;
+}
+
+#containerForm  .tab-status {
+    display: flex;
+    align-items: center;
+}
+
+#containerForm  .tab-status span {
+    appearance: none;
+    background: var(--status-btn-bg);
+    border: none;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-right: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#containerForm  .tab-status span.active {
+    background-color: var(--color-2);
+    color: white;
+}
+
+#containerForm  .hidden {
+    display: none;
+}
