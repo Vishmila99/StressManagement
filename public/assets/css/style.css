@@ -439,10 +439,13 @@ header {
     margin-top: -5px; }
   .doctor-message .doc-det p {
     margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 18px;
     text-indent: 20px; }
   .doctor-message .doc-det h4 {
-    margin-top: 30px; }
+    /* margin-top: 30px; */
+    margin-bottom: 30px;
+     }
 
 /* ===================================== Mission Vision CSS ================================== */
 .mosion-vision {

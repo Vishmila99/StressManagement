@@ -10,12 +10,23 @@
                </div>
                <div id="menu" class="col-lg-7 col-md-8 d-none d-md-block no-padding">
                    <ul>
+
+                        @if(Auth::check())
                         <li><a href="{{route('index')}}">Home</a></li>
-                        {{-- <li><a href="{{route('services')}}">Services</a></li> --}}
-                        <li><a href="{{route('about')}}">About Us</a></li>
                         <li><a href="{{route('services')}}">Services</a></li>
-                        {{-- <li><a href="/blog">Blog</a></li> --}}
+                        <li><a href="{{route('about')}}">About Us</a></li>
                         <li><a href="{{route('contact')}}">Contact Us</a></li>
+                        @else
+
+                        <li><a href="{{route('index')}}">Home</a></li>
+                        <li><a href="{{route('about')}}">About Us</a></li>
+                        <li><a href="{{route('contact')}}">Contact Us</a></li>
+                        @endif
+
+
+
+                        {{-- <li><a href="/blog">Blog</a></li> --}}
+
 
                         @guest
 
@@ -35,7 +46,41 @@
 
                         <li class="btn btn-success" type="button" >
                             <a  href="{{ route('register') }}">Signup</a></li>
+                        @else
+                            <li class="btn btn-success dropdown">
+                                {{-- <a id="navbarDropdown" class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="true" v-pre>
+                                    {{ Auth::user()->name }}
+                                </a> --}}
 
+                                    @if (Auth::user()->type == 'user')
+                                    <a href="{{ route('user.logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+                                    <form id="logout-form" action="{{ route('user.logout') }}" method="POST" class="">
+                                        @csrf
+                                    </form>
+                                    @endif
+                                    @if (Auth::user()->type == 'doctor')
+                                    <a href="{{ route('doctor.logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+                                    <form id="logout-form" action="{{ route('doctor.logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                    @endif
+                                    @if (Auth::user()->type == 'admin')
+                                    <a href="{{ route('admin.logout') }}"
+                                       onclick="event.preventDefault();
+                                                     document.getElementById('logout-form').submit();">
+                                        {{ __('Logout') }}
+                                    </a>
+                                    <form id="logout-form" action="{{ route('admin.logout') }}" method="POST" class="d-none">
+                                        @csrf
+                                    </form>
+                                    @endif
+                            </li>
                         @endguest
                     </ul>
                </div>

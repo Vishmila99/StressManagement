@@ -20,17 +20,18 @@
             <div class="container">
                 <div class="row">
 
-
-                    <div class="col-md-6 col-sm-12 doc-img">
-                        <img  src="assets/images/doctt.png" alt="">
+                    <div class="col">
+                        {{-- <img  src="assets/images/doctt.png" alt=""> --}}
                     </div>
-                    <div class="col-md-6 col-sm-12 doc-det">
-                        <h2>Hello, I’m Doctor Sanjaya</h2>
-                        <span>Expert Clinical Psychologist in Manhattan</span>
+                    <div class="col-6 center doc-det">
+                        {{-- <h1 >&rdquo;</h1> --}}
+                        <i class="fa fa-quote-left" style="font-size:36px" ></i>
+                        <h4>The truth is that stress doesn't come from your boss, your kids, your spouse, traffic jams, health challenges or other circumstances. It comes from your thoughts about your cricumstances.</h4>
+                        <i class="fa fa-quote-right" style="font-size:36px"></i>
 
-                        <p>Lorem Ipsum is simply text of the Lorem Ipsum is simply my text of the printing and Ipsum is simply text of the Ipsum is simply text of thetypesetting Ipsum is simply text of the stry simply dummy text of the printing and typesetting industry. Lorem Ipsum is simply text of the Lorem Ipsum is simply my text of </p>
-
-                        <h4>Call me on :0748700869</h4>
+                    </div>
+                    <div class="col">
+                        {{-- <img  src="assets/images/doctt.png" alt=""> --}}
                     </div>
                 </div>
             </div>

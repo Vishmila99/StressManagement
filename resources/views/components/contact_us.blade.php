@@ -1,5 +1,8 @@
 @extends('layouts.index')
 @section('title','PROJECT - Contact')
+@push('styles')
+    @include('layouts.head')
+@endpush
 @section('breadcrumb')
     @include('layouts.pagetiltle',['page' => 'contact'])
 @endsection

@@ -5,21 +5,18 @@
             <div class="col-md-4 col-sm-12">
                 <h2>About Us</h2>
                 <p>
-                    Smart Eye is a leading provider of information technology, consulting, and business process
-                    services. Our dedicated employees offer strategic insights, technological expertise and industry
-                    experience.
+                    Psychology is an independent nonprofit that runs one of the world's leading mental health websites. Each month, millions of people from all around the world turn to us for trustworthy guidance they can use to strengthen their mental health and well-being, navigate challenges, and make healthy changes in their lives.
                 </p>
-                <p>We focus on technologies that promise to reduce costs, streamline processes and speed time-to-market,
-                    Backed by our strong quality processes and rich experience managing global... </p>
+
             </div>
             <div class="col-md-4 col-sm-12">
                 <h2>Useful Links</h2>
                 <ul class="list-unstyled link-list">
-                    <li><a ui-sref="about" href="#/about">About us</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="portfolio" href="#/portfolio">Portfolio</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="products" href="#/products">Latest jobs</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="gallery" href="#/gallery">Gallery</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="contact" href="#/contact">Contact us</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="about" href="/about">About us</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="portfolio" href="">Portfolio</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="products" href="">Latest jobs</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="gallery" href="">Gallery</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="contact" href="">Contact us</a><i class="fa fa-angle-right"></i></li>
                 </ul>
             </div>
             <div class="col-md-4 col-sm-12 map-img">

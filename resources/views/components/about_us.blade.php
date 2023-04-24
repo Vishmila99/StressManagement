@@ -25,26 +25,7 @@
 
          <!-- ######## Page  Title End ####### -->
 
-         <!--  ************************* About Us Content Start Here  ************************** -->
-            {{-- <div class="about-us">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-md-6 col-sm-12">
-                            <img src="assets/images/aboout.jpg" alt="">
-                        </div>
-                        <div class="col-md-6 col-sm-12">
-                            <h2>Welcome to  Spinta  Clinic</h2>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius eros consequat auctor gravida. Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.</p>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius eros consequat auctor gravida. Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius eros consequat auctor gravida. Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.</p>
-                            <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam varius eros consequat auctor consectetur adipiscing elit. Nam varius eros consequat auctorconsectetur adipiscing elit. Nam varius eros consequat auctor gravida. Fusce tristique lacus at urna sollicitudin pulvinar. Suspendisse hendrerit ultrices mauris.Fusce tristique lacus at urna  adipiscing  </p>
 
-                        </div>
-                    </div>
-
-                </div>
-            </div> --}}
-
-        <!-- ######## About US End ####### -->
         	<!-- ################# Mission Vision Starts Here#######################--->
 
   	<div class="mosion-vision">
@@ -81,7 +62,25 @@
   	        </div>
   	    </div>
   	</div>
-                <div class="col-sm-12 counsellor">
+
+     <!--  ************************* About Us Content Start Here  ************************** -->
+            <div class="about-us">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-6 col-sm-12">
+                            <img src="assets/images/aboout.jpg" alt="">
+                        </div>
+                        <div class="col-md-6 col-sm-12">
+                            <p> Psychology is an independent nonprofit that runs one of the world's leading mental health websites. Each month, millions of people from all around the world turn to us for trustworthy guidance they can use to strengthen their mental health and well-being, navigate challenges, and make healthy changes in their lives.</p>
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        <!-- ######## About US End ####### -->
+                {{-- <div class="col-sm-12 counsellor">
                     <h2 class="page-title">Our Counsellors</h2>
                 </div>
                 <div class="no-margin row">
@@ -189,7 +188,7 @@
   				</div>
   			</div>
 
-  		</div>
+  		</div> --}}
        </section>
   	</div>
 @endsection

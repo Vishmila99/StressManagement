@@ -13,20 +13,142 @@
                 <span class="tab active">1</span>
                 <span class="tab">2</span>
                 <span class="tab">3</span>
+                <span class="tab">4</span>
+                <span class="tab">5</span>
+                <span class="tab">6</span>
+                <span class="tab">7</span>
+                <span class="tab">8</span>
+
+
+
+
+
             </div>
             <form action="#" id="stepForm">
                 <div role="tab-list">
-                    <div role="tabpanel" id="color" class="tabpanel">
-                        <h3>What is your favorite color?</h3>
-                        <textarea name="color" class="form-input" placeholder="Ruby red"></textarea>
+                    <div role="tabpanel" id="gender" class="tabpanel">
+                        <h3>what is your gender identity?</h3>
+                        {{-- <textarea name="color" class="form-input" placeholder="Ruby red"></textarea> --}}
+
+                            <div class="form-check">
+                            <input type="radio" class="form-check-input form-input" id="male" name="male" value="Male" style="width: 20px" checked>
+                            <label class="form-check-label" for="radio1">Male</label>
+                            </div>
+                            <div class="form-check">
+                            <input type="radio" class="form-check-input form-input" id="female" name="female" value="Female" style="width: 20px">
+                            <label class="form-check-label" for="radio2">Female</label>
+                            </div>
+
+
                     </div>
-                    <div role="tabpanel" id="hobbies" class="tabpanel hidden">
-                        <h3>What are your hobbies?</h3>
-                        <textarea name="hobbies" class="form-input" placeholder="Mountain climbing, Guitar, Skateboarding"></textarea>
+                    <div role="tabpanel" id="old" class="tabpanel hidden">
+                        <h3>How old are you?</h3>
+                        <input name="old" class="form-input" placeholder="25 Years"/>
                     </div>
-                    <div role="tabpanel" id="occupation" class="tabpanel hidden">
-                        <h3>What is your occupation?</h3>
-                        <textarea name="occupation" class="form-input" placeholder="Web Designer"></textarea>
+                    <div role="tabpanel" id="identity" class="tabpanel hidden">
+                        <h3>How do you identity?</h3>
+                        {{-- <textarea name="occupation" class="form-input" placeholder="Web Designer"></textarea> --}}
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input form-input" id="straight" name="straight" value="straight" style="width: 20px" checked>
+                            <label class="form-check-label" for="radio1">Straight</label>
+                            </div>
+                            <div class="form-check">
+                            <input type="radio" class="form-check-input form-input" id="gay" name="gay" value="gay" style="width: 20px">
+                            <label class="form-check-label" for="radio2">Gay</label>
+                            </div>
+                            <div class="form-check">
+                            <input type="radio" class="form-check-input form-input" id="lesbian" name="lesbian" value="lesbian" style="width: 20px">
+                            <label class="form-check-label" for="radio1">Lesbian</label>
+                            </div>
+                            <div class="form-check">
+                            <input type="radio" class="form-check-input form-input" id="not" name="not" value="not" style="width: 20px">
+                            <label class="form-check-label" for="radio2">Perfect not to say</label>
+                            </div>
+                    </div>
+
+                    <div role="tabpanel" id="relationship" class="tabpanel hidden">
+                        <h3>What is your relationship status?</h3>
+                        {{-- <textarea name="occupation" class="form-input" placeholder="Web Designer"></textarea> --}}
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input form-input" id="single" name="single" value="single" style="width: 20px" checked>
+                            <label class="form-check-label" for="radio1">Single</label>
+                            </div>
+                            <div class="form-check">
+                            <input type="radio" class="form-check-input form-input" id="relationship" name="relationship" value="relationship" style="width: 20px">
+                            <label class="form-check-label" for="radio2">In a relationship</label>
+                            </div>
+                            <div class="form-check">
+                            <input type="radio" class="form-check-input form-input" id="married" name="married" value="married" style="width: 20px">
+                            <label class="form-check-label" for="radio1">Married</label>
+                            </div>
+                            <div class="form-check">
+                            <input type="radio" class="form-check-input form-input" id="divorced" name="divorced" value="divorced" style="width: 20px">
+                            <label class="form-check-label" for="radio2">Divorced</label>
+                            </div>
+                            <div class="form-check">
+                            <input type="radio" class="form-check-input form-input" id="widowed" name="widowed" value="widowed" style="width: 20px">
+                            <label class="form-check-label" for="radio2">Widowed</label>
+                            </div>
+                            <div class="form-check">
+                            <input type="radio" class="form-check-input form-input" id="other" name="other" value="other" style="width: 20px">
+                            <label class="form-check-label" for="radio2">Other</label>
+                            </div>
+                    </div>
+
+                    <div role="tabpanel" id="old" class="tabpanel hidden">
+                        <h3>Do you consider yourself to be religious?</h3>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input form-input" id="yes" name="yes" value="yes" style="width: 20px" checked>
+                            <label class="form-check-label" for="radio1">Yes</label>
+                            </div>
+
+                            <div class="form-check">
+                            <input type="radio" class="form-check-input form-input" id="no" name="no" value="no" style="width: 20px">
+                            <label class="form-check-label" for="radio2">No</label>
+                            </div>
+                    </div>
+                     <div role="tabpanel" id="old" class="tabpanel hidden">
+                        <h3>which religion do you belong to?</h3>
+                        <div class="form-check">
+                        <input type="radio" class="form-check-input form-input" id="buddhist" name="buddhist" value="buddhist" style="width: 20px" checked>
+                        <label class="form-check-label" for="radio2">Buddhist</label>
+                        </div>
+                        <div class="form-check">
+                        <input type="radio" class="form-check-input form-input" id="christianity" name="christianity" value="christianity" style="width: 20px">
+                        <label class="form-check-label" for="radio2">Christianity</label>
+                        </div>
+                        <div class="form-check">
+                        <input type="radio" class="form-check-input form-input" id="islam" name="islam" value="islam" style="width: 20px">
+                        <label class="form-check-label" for="radio2">Islam</label>
+                        </div>
+                        <div class="form-check">
+                        <input type="radio" class="form-check-input form-input" id="other" name="other" value="other" style="width: 20px">
+                        <label class="form-check-label" for="radio2">Other</label>
+                        </div>
+                    </div>
+
+                    <div role="tabpanel" id="old" class="tabpanel hidden">
+                        <h3>Do you consider yourself to be spiritual?</h3>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input form-input" id="yes" name="yes" value="yes" style="width: 20px" checked>
+                            <label class="form-check-label" for="radio2">Yes</label>
+                            </div>
+                            <div class="form-check">
+                            <input type="radio" class="form-check-input form-input" id="no" name="no" value="no" style="width: 20px">
+                            <label class="form-check-label" for="radio2">No</label>
+                            </div>
+                    </div>
+
+                    <div role="tabpanel" id="old" class="tabpanel hidden">
+                        <h3>Have you ever been in therapy before?</h3>
+                        <div class="form-check">
+                            <input type="radio" class="form-check-input form-input" id="yes" name="yes" value="yes" style="width: 20px" checked>
+                            <label class="form-check-label" for="radio2">Yes</label>
+                            </div>
+                            <div class="form-check">
+                            <input type="radio" class="form-check-input form-input" id="no" name="no" value="no" style="width: 20px">
+                            <label class="form-check-label" for="radio2">No</label>
+                            </div>
                     </div>
                 </div>
                 <div class="pagination">
