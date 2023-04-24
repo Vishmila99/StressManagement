@@ -4,9 +4,7 @@
     @include('layouts.pagetiltle',['page' => 'contact'])
 @endsection
 @section('content')
-@section('footer')
-    @include('layouts.footer')
-@endsection
+
     <!--  ************************* Page Title Starts Here ************************** -->
     {{-- <div class="page-nav no-margin row">
         <div class="container">
@@ -98,3 +96,10 @@
 
     </div>
 @endsection
+@section('footer')
+    @include('layouts.footer')
+@endsection
+
+@push('scripts')
+    @include('layouts.foot')
+@endpush

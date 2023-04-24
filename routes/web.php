@@ -31,7 +31,7 @@ Route::view('/individual_form', 'components.individual_form')->name('individual_
 
 
 
-Auth::routes(['register' => true]);
+Auth::routes(['register' => TRUE]);
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 

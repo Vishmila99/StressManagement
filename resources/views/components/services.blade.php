@@ -1,10 +1,11 @@
 @extends('layouts.index')
 @section('title','PROJECT - Program')
+@push('styles')
+    @include('layouts.head')
+@endpush
 @section('content')
 
-@section('footer')
-    @include('layouts.footer')
-@endsection
+
 
 <div class="slider">
     <!-- Set up your HTML -->
@@ -41,4 +42,11 @@
 
 
 @endsection
+@section('footer')
+    @include('layouts.footer')
+@endsection
 
+
+@push('scripts')
+    @include('layouts.foot')
+@endpush

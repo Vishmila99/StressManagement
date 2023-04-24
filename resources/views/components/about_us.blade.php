@@ -1,5 +1,8 @@
 @extends('layouts.index')
 @section('title','PROJECT - About')
+@push('styles')
+    @include('layouts.head')
+@endpush
 @section('breadcrumb')
     @include('layouts.pagetiltle',['page' => 'about'])
 @endsection
@@ -193,3 +196,7 @@
 @section('footer')
     @include('layouts.footer')
 @endsection
+
+@push('scripts')
+    @include('layouts.foot')
+@endpush

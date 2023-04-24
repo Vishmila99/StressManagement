@@ -1,5 +1,8 @@
 @extends('layouts.index')
 @section('title','PROJECT - Home')
+@push('styles')
+    @include('layouts.head')
+@endpush
 @section('content')
     @include('layouts.mainslider')
 
@@ -37,4 +40,10 @@
     </div>
 
 @endsection
+<!-- @section('footer')
+    @include('layouts.footer')
+@endsection -->
 
+@push('scripts')
+    @include('layouts.foot')
+@endpush
