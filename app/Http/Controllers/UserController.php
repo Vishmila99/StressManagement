@@ -16,7 +16,7 @@ class UserController extends Controller
     {
         //
         // dd(Auth::user()->type);
-        return view('home');
+        return view('components.services');
     }
 
     /**

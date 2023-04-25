@@ -13,10 +13,10 @@
                 <h2>Useful Links</h2>
                 <ul class="list-unstyled link-list">
                     <li><a ui-sref="about" href="/about">About us</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="portfolio" href="">Portfolio</a><i class="fa fa-angle-right"></i></li>
+                    <!-- <li><a ui-sref="portfolio" href="">Portfolio</a><i class="fa fa-angle-right"></i></li>
                     <li><a ui-sref="products" href="">Latest jobs</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="gallery" href="">Gallery</a><i class="fa fa-angle-right"></i></li>
-                    <li><a ui-sref="contact" href="">Contact us</a><i class="fa fa-angle-right"></i></li>
+                    <li><a ui-sref="gallery" href="">Gallery</a><i class="fa fa-angle-right"></i></li> -->
+                    <li><a ui-sref="contact" href="/contact">Contact us</a><i class="fa fa-angle-right"></i></li>
                 </ul>
             </div>
             <div class="col-md-4 col-sm-12 map-img">
@@ -38,16 +38,14 @@
 </footer>
 <div class="copy">
     <div class="container">
-        {{now()->year}} &copy; All Rights Reserved | Designed and Developed by
-        <a href="https://www.smarteyeapps.com/">Smarteyeapps</a>
-
-        <span>
+        {{now()->year}} &copy; All Rights Reserved. 
+        <!-- <span>
             <a><i class="fab fa-github"></i></a>
             <a><i class="fab fa-google-plus-g"></i></a>
             <a><i class="fab fa-pinterest-p"></i></a>
             <a><i class="fab fa-twitter"></i></a>
             <a><i class="fab fa-facebook-f"></i></a>
-        </span>
+        </span> -->
     </div>
 
 </div>
