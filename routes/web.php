@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AboutUsController;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
 use App\Http\Controllers\Auth\LoginController;
@@ -19,13 +20,16 @@ use App\Http\Controllers\AdminController;
 */
 /* General Routes */
 Route::view('/','components.home')->name('index');
-Route::view('/about','components.about_us')->name('about');
+// Route::view('/about','components.about_us')->name('about');
+Route::get('/about', [AboutUsController::class, 'index'])->name('about');
 // Route::view('/services','components.services')->name('services');
 Route::view('/contact','components.contact_us')->name('contact');
 Route::view('/blog' ,'components.blog')->name('blog');
 Route::view('/services', 'components.services')->name('services');
 Route::view('/individual', 'components.individual')->name('individual');
 Route::view('/individual_form', 'components.individual_form')->name('individual_form');
+Route::view('/games', 'components.games')->name('games');
+
 
 
 

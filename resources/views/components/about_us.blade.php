@@ -80,58 +80,34 @@
             </div>
 
         <!-- ######## About US End ####### -->
-                {{-- <div class="col-sm-12 counsellor">
+                <div class="col-sm-12 counsellor">
                     <h2 class="page-title">Our Counsellors</h2>
                 </div>
-                <div class="no-margin row">
+                <div class="no-margin row justify-content-center">
+                    @foreach ($doctors as $doctor)
                     <div class="col-md-4 col-sm-4  col-lg-3">
                         <div class="profile-widget">
                             <div class="doctor-img">
                                 <a class="avatar" href="profile.html"><img alt="" src="assets/images/about/doctor-03.jpg"></a>
                             </div>
-                            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Miss Nadeeka Nilmini</a></h4>
+                            <h4 class="doctor-name text-ellipsis"><a href="profile.html">{{ $doctor->name }}</a></h4>
                             <div class="user-country">
-                                <i class="fa fa-map-marker"></i> General Sir John Kotelawala Defence University
+                                <i class=""></i> {{$doctor -> position_1}}
+                            </div>
+                             <div class="user-country">
+                                <i class=""></i> {{$doctor -> position_2}}
+                            </div>
+                            <div class="user-country">
+                                <i class="fa fa-map-marker"></i> {{$doctor -> hospital}}
                             </div>
                         </div>
                     </div>
-                     <div class="col-md-4 col-sm-4  col-lg-3">
-                        <div class="profile-widget">
-                            <div class="doctor-img">
-                                <a class="avatar" href="profile.html"><img alt="" src="assets/images/about/doctor-03.jpg"></a>
-                            </div>
-                            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Miss Nadeeka Nilmini</a></h4>
-                            <div class="user-country">
-                                <i class="fa fa-map-marker"></i> General Sir John Kotelawala Defence University
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col-md-4 col-sm-4  col-lg-3">
-                        <div class="profile-widget">
-                            <div class="doctor-img">
-                                <a class="avatar" href="profile.html"><img alt="" src="assets/images/about/doctor-03.jpg"></a>
-                            </div>
-                            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Miss Nadeeka Nilmini</a></h4>
-                            <div class="user-country">
-                                <i class="fa fa-map-marker"></i> General Sir John Kotelawala Defence University
-                            </div>
-                        </div>
-                    </div>
-                     <div class="col-md-4 col-sm-4  col-lg-3">
-                        <div class="profile-widget">
-                            <div class="doctor-img">
-                                <a class="avatar" href="profile.html"><img alt="" src="assets/images/about/doctor-03.jpg"></a>
-                            </div>
-                            <h4 class="doctor-name text-ellipsis"><a href="profile.html">Miss Nadeeka Nilmini</a></h4>
-                            <div class="user-country">
-                                <i class="fa fa-map-marker"></i> General Sir John Kotelawala Defence University
-                            </div>
-                        </div>
-                    </div>
+
+                    @endforeach
                 </div>
 
 
-                <div class="stories">
+                {{-- <div class="stories">
                     <div class="col-sm-12 counsellor">
                     <h2 class="page-title">Our Success Stories</h2>
                 </div>
@@ -188,9 +164,9 @@
   				</div>
   			</div>
 
-  		</div> --}}
+  		</div>
        </section>
-  	</div>
+  	</div> --}}
 @endsection
 @section('footer')
     @include('layouts.footer')

@@ -14,11 +14,13 @@
                         @if(Auth::check())
                         <li><a href="{{route('index')}}">Home</a></li>
                         <li><a href="{{route('services')}}">Services</a></li>
+                        <li><a href="{{route('games')}}">Games</a></li>
                         <li><a href="{{route('about')}}">About Us</a></li>
-                        <li><a href="{{route('contact')}}">Contact Us</a></li>
+                        <li><a href="{{route('contact')}}">Contact Us</a></li></ul></div></div></div></nav></header>
                         @else
 
                         <li><a href="{{route('index')}}">Home</a></li>
+                        <li><a href="{{route('games')}}">Games</a></li>
                         <li><a href="{{route('about')}}">About Us</a></li>
                         <li><a href="{{route('contact')}}">Contact Us</a></li>
                         @endif
