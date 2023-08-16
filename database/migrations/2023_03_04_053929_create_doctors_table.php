@@ -20,6 +20,7 @@ class CreateDoctorsTable extends Migration
             $table->string('position_1');
             $table->string('position_2');
             $table->string('hospital');
+            $table->enum('status',['active','deleted']);
             $table->timestamps();
         });
     }

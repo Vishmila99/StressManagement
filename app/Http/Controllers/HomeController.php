@@ -13,7 +13,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
     /**
@@ -23,6 +23,9 @@ class HomeController extends Controller
      */
     public function index()
     {
-        return view('components.home');
+        $sliderController = new SliderController();
+        $slides = $sliderController->index()->where('type','home')->get();
+        // dd($slides);
+        return view('components.home',compact('slides'));
     }
 }

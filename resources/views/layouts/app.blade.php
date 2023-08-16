@@ -18,6 +18,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+
 </head>
 <body>
     <div id="app">
@@ -105,7 +107,7 @@
                                     @endif
                                 </div>
                             </li>
-                        @endguest       
+                        @endguest
                     </ul>
                 </div>
             </div>
@@ -116,4 +118,6 @@
         </main>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+
 </html>

@@ -7,6 +7,7 @@ use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\DoctorController;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ContactController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,7 +20,7 @@ use App\Http\Controllers\AdminController;
 |
 */
 /* General Routes */
-Route::view('/','components.home')->name('index');
+// Route::view('/','components.home')->name('index');
 // Route::view('/about','components.about_us')->name('about');
 Route::get('/about', [AboutUsController::class, 'index'])->name('about');
 // Route::view('/services','components.services')->name('services');
@@ -29,7 +30,12 @@ Route::view('/services', 'components.services')->name('services');
 Route::view('/individual', 'components.individual')->name('individual');
 Route::view('/individual_form', 'components.individual_form')->name('individual_form');
 Route::view('/games', 'components.games')->name('games');
+Route::view('/games/puzzle', 'components.games.puzzle')->name('puzzle');
+Route::view('/games/sweetworld', 'components.games.sweetworld')->name('sweetworld');
+Route::view('/games/papertoss', 'components.games.papertoss')->name('papertoss');
 
+
+Route::post('/contact',[ContactController::class, 'store'])->name('contactus');
 
 
 
@@ -37,7 +43,7 @@ Route::view('/games', 'components.games')->name('games');
 
 Auth::routes(['register' => TRUE]);
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/', [App\Http\Controllers\HomeController::class, 'index'])->name('index');
 
 /* User Routes */
 Route::prefix('user')->name('user.')->group(function () {
@@ -86,3 +92,9 @@ Route::prefix('admin')->name('admin.')->group(function () {
 
     });
 });
+
+// Auth::routes();
+
+// Route::get('/home', function() {
+//     return view('home');
+// })->name('home')->middleware('auth');
