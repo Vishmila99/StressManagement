@@ -34,7 +34,7 @@ class LoginController extends Controller
             return redirect()->intended('user/dashboard');
         }
         if (Auth::guard('doctor')->attempt(['email' => $request->email, 'password' => $request->password, 'type' => 'doctor'], $request->get('remember'))) {
-        dd(Auth::guard());
+        // dd(Auth::guard());
             return redirect()->intended('doctor/dashboard');
         }
         if (Auth::guard('admin')->attempt(['email' => $request->email, 'password' => $request->password, 'type' => 'admin'], $request->get('remember'))) {
