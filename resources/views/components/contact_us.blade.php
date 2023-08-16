@@ -32,8 +32,7 @@
 
         <iframe style="width:100%"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1980.8030993195362!2d79.88905203847426!3d6.817657598295012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae25acc4a4a86e1%3A0x23e8b8390853ca4f!2sGeneral%20Sir%20John%20Kotelawala%20Defence%20University!5e0!3m2!1sen!2slk!4v1682394990074!5m2!1sen!2slk"
-            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"></iframe>
+            width="600" height="450" style="border:0;" allowfullscreen></iframe>
     </div>
 
     <div class="row contact-rooo no-margin">
